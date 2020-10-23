@@ -1,0 +1,17 @@
+.page-logo {
+  padding-right: 46px;
+  background-image: url(../images/logo/logo-img.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media screen and (min-width: $tablet-bp-min) {
+    padding-right: 76px;
+  }
+  &_link {
+    @media screen and (min-width: $tablet-bp-min) {
+      @include font-settings(3rem, 1.2, 700, $logo-font-color);
+    }
+    @include font-settings(2rem, 1.2, 700, $logo-font-color);
+    font-family: $deco-font-family;
+  }
+}
