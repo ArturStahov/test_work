@@ -4,36 +4,36 @@ const fetchExchangeRates = {
     options: {
         method: 'GET',
         headers: {
-          Accept: 'application/json',
+            Accept: 'application/json',
         },
     },
 
     requestForTheCurrentDate() {
         return fetch(`${this.baseUrl}/NBUStatService/v1/statdirectory/exchange?json`, this.options)
-        .then(response => {
+            .then(response => {
 
-            if (!response.ok) {
-                throw ('Error!!!')
-            } 
-            return response.json()
-        })
-        .catch(err => {
-            console.log(err);
-        })
+                if (!response.ok) {
+                    throw ('Error!!!')
+                }
+                return response.json()
+            })
+            .catch(err => {
+                console.log(err);
+            })
     },
 
     requestForTheSelectedDate(date) {
         return fetch(`${this.baseUrl}/NBUStatService/v1/statdirectory/exchange?date=${date}&json`, this.options)
-        .then(response => {
+            .then(response => {
 
-            if (!response.ok) {
-                throw ('Error!!!')
-            } 
-            return response.json()
-        })
-        .catch(err => {
-            console.log(err);
-        });
+                if (!response.ok) {
+                    throw ('Error!!!')
+                }
+                return response.json()
+            })
+            .catch(err => {
+                console.log(err);
+            });
     },
 }
 
