@@ -1,0 +1,13 @@
+.page-footer {
+  padding: 20px 0px 20px 0px;
+  background: linear-gradient(
+    360deg,
+    rgba(39, 44, 52, 1),
+    rgba(79, 85, 96, 1) 40%
+  );
+}
+
+.footer-copirate {
+  text-align: center;
+  @include font-settings(1rem, 1.2, 500, $footer-copirate-font-color);
+}
