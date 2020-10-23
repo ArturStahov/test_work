@@ -18,3 +18,11 @@ authWithEmailAndPassword(email, password)
     console.log('message', message);
     console.log('registered', registered);
   }).catch((error) => console.log('error', error));
+
+
+
+
+
+
+
+  import './components/calc/calc'
