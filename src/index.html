@@ -26,7 +26,8 @@
       <form class="modal-window-form" action="" data-type="modal-form">
         <input class="modal-window-form_input" type="email" name="email" min="5" max="30" required>
         <input class="modal-window-form_input" type="password" name="password" min="6" max="30" required>
-        <button class="modal-window-form_button" type="submit" name="button" id="modal-form-button" data-type="">Submit</button>
+        <button class="modal-window-form_button" type="submit" name="button" id="modal-form-button"
+          data-type="">Submit</button>
       </form>
     </div>
     <div class="container">
@@ -44,6 +45,12 @@
 
           <!-- add content div -->
 
+          <div class="charts">
+            <h2 class="title-chart">Динамика валюты за 8 дней</h2>
+            <canvas id="myChart" class="js-chart" width="800" height="400"></canvas>
+            <canvas id="myChart2" class="js-chart" width="800" height="400"></canvas>
+            <canvas id="myChart3" class="js-chart" width="800" height="400"></canvas>
+          </div>
 
         </div>
       </section>

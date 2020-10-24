@@ -1,6 +1,6 @@
 import './scss/main.scss';
 import fetchExchangeRates from './components/serviceApi/fetchExchangeRates';
-import authHandler from './components/auth/registrationHandlers'
+import authHandler from './components/auth/registrationHandlers';
 
 
 const formLoginRef = document.querySelector('[data-type="modal-form"]');
@@ -15,7 +15,3 @@ fetchExchangeRates.requestForTheSelectedDate(20201011).then(data => console.log(
 
 
 formLoginRef.addEventListener('submit', authHandler);
-
-
-
-
