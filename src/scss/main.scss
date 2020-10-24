@@ -3,4 +3,19 @@
 @import './helpers/mixins';
 @import 'fonts';
 @import 'base';
-@import '../components/exchangeRate/exchangeRate';
+
+//header
+@import './header/page-header';
+@import './header/logo';
+@import './header/page-nav';
+
+//main
+@import './main/page-main';
+@import './main/splash-screen';
+
+//footer
+@import './footer/page-footer';
+
+//component
+@import '../components/modal-window/modal-window';
+@import '../components/chart/chart';
