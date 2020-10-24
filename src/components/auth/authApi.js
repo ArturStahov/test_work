@@ -19,7 +19,7 @@ export function authWithEmailAndPassword(email, password) {
     .then(data => {
       const message = data.error && data.error.message || "Authorization success! Welcome"
       const authorized = !data.error && true || false;
-      return { message, authorized };
+      return { message, authorized, email };
     })
 }
 
@@ -41,7 +41,7 @@ export function registrationWithEmailAndPassword(email, password) {
     .then(data => {
       const message = data.error && data.error.message || "Registration success! Welcome"
       const registered = !data.error && true || false;
-      return { message, registered };
+      return { message, registered, email };
     })
 }
 
