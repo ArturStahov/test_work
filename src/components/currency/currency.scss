@@ -1,0 +1,13 @@
+.currency{
+  border: 1px solid grey;
+  background-color: rgba(23, 70, 163, 0.8);
+  font-family: Open\Sans;
+  @include font-settings(1rem, 1.2, 700, $title-chart-font-color);
+  @media screen and (min-width: $tablet-bp-min) {
+    @include font-settings(1.5rem, 1.2, 700, $title-chart-font-color);
+  }
+}
+
+.currency-value:not(:last-child) {
+  margin-right: 100px;
+}
