@@ -1,6 +1,13 @@
-# Currency calculator.
+# Finance Fast Micro service.
 
 ## This is an educational project carried out by a group of GoIT students.
+The team was tasked with coming up with a project theme, designing a solution, organizing the work and implementing the task within two days.
+
+### The application has functionality:
+- User authorization and new user registration
+- Information about the current exchange rate in Ukraine by the National Bank of Ukraine
+- Currency calculator
+- Charts the dynamics of changes in the last 8 days.
 
 ### Project goals: 
 - Strengthening teamwork skills
