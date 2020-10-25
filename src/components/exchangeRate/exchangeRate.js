@@ -23,5 +23,5 @@ const showExchangeRates = async () => {
         console.log(err);
     };
 };
-
-showExchangeRates();
+showExchangeRates
+export default showExchangeRates;
