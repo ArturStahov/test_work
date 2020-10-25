@@ -9,12 +9,7 @@ $title-chart-font-color: #fff;
   max-width: 900px;
   margin: 0 auto;
   margin-bottom: 20px;
-  background: linear-gradient(
-    217deg,
-    rgba(80, 79, 79, 0),
-    rgba(23, 70, 163, 0.8) 70.71%
-  );
-
+  background: rgba(23, 70, 163, 0.8);
   text-shadow: 1px 1px 2px #000, 0 0 1em #fff;
   text-align: center;
   border-top-right-radius: 5px;
@@ -32,7 +27,7 @@ $title-chart-font-color: #fff;
 }
 
 .charts {
-  padding: 10px;
+  max-width: 900px;
   background-color: $chart-windows-bg;
   border: none;
   border-radius: 0.5rem;
