@@ -25,13 +25,12 @@
 - FireBase(authorization, registration).
 - Trello
 
-
 ### Authors and implementers of the idea: 
 - [Stanislav Yurchenko](https://github.com/StanislavYurchenko)
 - [Artur Stahov](https://github.com/ArturStahov)
 - [Inna Tischenko](https://github.com/inna91)
 - [Yulia Labutkina](https://github.com/YuliaLabutkina)
-- [Vladimir Babich](https://github.com/vovababich)
+- [Vladimir Babych](https://github.com/vovababych)
 
 **©2020 magnificent-eight team**
 
