@@ -38,6 +38,19 @@ const fetchExchangeRates = {
         console.log(err);
       });
   },
+
+  requestPrivatBank() {
+    return fetch('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5').then(response => {
+      if (!response.ok) {
+        throw 'Error!!!';
+      }
+      return response.json();
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  },
+
 };
 
 export default fetchExchangeRates;
