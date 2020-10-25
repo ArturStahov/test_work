@@ -28,7 +28,7 @@
 ### Authors and implementers of the idea: 
 - [Stanislav Yurchenko](https://github.com/StanislavYurchenko)
 - [Artur Stahov](https://github.com/ArturStahov)
-- [Inna Tischenko](https://github.com/inna91)
+- [Inna Tishchenko](https://github.com/inna91)
 - [Yulia Labutkina](https://github.com/YuliaLabutkina)
 - [Vladimir Babych](https://github.com/vovababych)
 
