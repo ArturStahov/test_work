@@ -14,3 +14,5 @@ main-screen-bg а класс splash-screen-bg добавить
 атрибут [data-type="login-btn"] или [data-type="registration-btn"] ты можеш
 найти кнопку по id='modal-form-button' и в зависимости какое значение атрибута
 data-type при клике на кнопку либо регестрировать либо логинить
+
+6)кнопку выхода с main-screen можно найти по data-type="button-logout"
