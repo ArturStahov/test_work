@@ -8,6 +8,8 @@ const formLoginRef = document.querySelector('[data-type="modal-form"]');
 const btnLogoutRef = document.querySelector('[data-type="button-logout"]');
 
 
+import calculatorCurrency from './components/calculator/calculator.js'
+
 
 
 
@@ -15,6 +17,14 @@ const btnLogoutRef = document.querySelector('[data-type="button-logout"]');
 
 // login, registration, logout
 formLoginRef.addEventListener('submit', authHandler);
+
+
+
+
+
+
+
+calculatorCurrency();
 btnLogoutRef.addEventListener('click', logoutHandler);
 
 

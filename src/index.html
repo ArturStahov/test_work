@@ -42,6 +42,7 @@
               data-type="button-signin">Signin</button>
           </div>
         </div>
+
         <div class="main-screen visually-hidden" data-type="main-screen">
           <div class="main-screen-nav">
             <button class="main-screen-nav_button button-logout-ico" type="button" data-type="button-logout"></button>
@@ -52,7 +53,29 @@
 
           <div class="exchange-rate-and-calculator-wrapper">
             <div class="exchange-rate-national-bank"></div>
-            <div></div>
+            <div class="calc">
+              <h2 class="title-calc">Конвертер валют</h2>
+              <div class="calc-wrapper">
+                <input class="calc-input" type="number" id="number" value="" placeholder='Введите суму...'>
+                <select id="first-select">
+                  <option selected disabled>валюта</option>
+                  <option value="USD">USD </option>
+                  <option value="EUR">EUR </option>
+                  <option value="RUR">RUR </option>
+                  <option value="GRN">UAH </option>
+                </select>
+                <span class="title-select">конвертировать в </span>
+                <select id="second-select">
+                  <option selected disabled>валюта</option>
+                  <option value="USD">USD </option>
+                  <option value="EUR">EUR </option>
+                  <option value="RUR">RUR </option>
+                  <option value="GRN">UAH </option>
+                </select>
+                <span class="title-select">результат: </span>
+                <span class="result"></span>
+              </div>
+            </div>
           </div>
 
           <div class="charts">
