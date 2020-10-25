@@ -17,7 +17,7 @@ let activeUser = {
   email: null,
 };
 
-export default function authHandler(event) {
+export function authHandler(event) {
   event.preventDefault();
 
   const { email, password, button } = event.currentTarget.elements;
@@ -88,14 +88,14 @@ export default function authHandler(event) {
 }
 
 
-
-
-
-
-// if (activeUser.authorized) {
-//   activeUser = {
-//     authorized: false,
-//     email: null,
-//   };
-//   return
-// }
+export function logoutHandler() {
+  activeUser = {
+    authorized: false,
+    email: null,
+  };
+  // СЮДА ВСТАВИТЬ ПОСЛЕ ВЫХОДА
+  splashRef.classList.remove('visually-hidden');
+  mainScreenRef.classList.add('visually-hidden');
+  pageMainRef.classList.remove('main-screen-bg');
+  pageMainRef.classList.add('splash-screen-bg');
+}
