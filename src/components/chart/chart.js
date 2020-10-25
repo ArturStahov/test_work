@@ -30,7 +30,7 @@ let yes4 = yesterday4.yyyymmdd();
 let yes5 = yesterday5.yyyymmdd();
 let yes6 = yesterday6.yyyymmdd();
 
-const chart1 = async () => {
+export const chart1 = async () => {
   let fullDataUsd = [];
   const data1 = await fetchExchangeRates.requestForTheSelectedDate(yes6);
   // const data1 = await fetch1.json();
@@ -94,7 +94,7 @@ const chart1 = async () => {
   renderChartUsd(fullDataUsd);
 };
 
-chart1();
+// chart1();
 
 function renderChartUsd(arrUsd) {
   const myChart1 = new Chart(ctx, {
@@ -126,7 +126,7 @@ function renderChartUsd(arrUsd) {
   });
 }
 
-const chart2 = async () => {
+export const chart2 = async () => {
   let fullDataEur = [];
   const data1 = await fetchExchangeRates.requestForTheSelectedDate(yes6);
   // const data1 = await fetch1.json();
@@ -189,7 +189,7 @@ const chart2 = async () => {
 
   renderChartEur(fullDataEur);
 };
-chart2();
+// chart2();
 
 function renderChartEur(arrEur) {
   const myChart2 = new Chart(ctx2, {
@@ -221,7 +221,7 @@ function renderChartEur(arrEur) {
   });
 }
 
-const chart3 = async () => {
+export const chart3 = async () => {
   let fullDataRub = [];
   const data1 = await fetchExchangeRates.requestForTheSelectedDate(yes6);
   // const data1 = await fetch1.json();
@@ -284,7 +284,7 @@ const chart3 = async () => {
 
   renderChartRub(fullDataRub);
 };
-chart3();
+// chart3();
 
 function renderChartRub(arrRub) {
   const myChart3 = new Chart(ctx3, {
@@ -315,3 +315,4 @@ function renderChartRub(arrRub) {
     },
   });
 }
+
