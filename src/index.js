@@ -1,5 +1,5 @@
 import './scss/main.scss';
-import fetchExchangeRates from './components/serviceApi/fetchExchangeRates';
+// import fetchExchangeRates from './components/serviceApi/fetchExchangeRates';
 import authHandler from './components/auth/registrationHandlers';
 import './components/chart/chart.js';
 import './components/exchangeRate/exchangeRate';
