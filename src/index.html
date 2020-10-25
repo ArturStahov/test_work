@@ -8,8 +8,94 @@
   <title>Finance Fast-Microservice</title>
 </head>
 
-<body>
 
+<body>
+  <header class="page-header">
+    <div class="container">
+      <nav class="page-nav">
+        <div class="page-logo">
+          <a class="page-logo_link" href="#">LOGO</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main splash-screen-bg" data-type="page-main">
+    <div class="modal-window" data-type="modal-window">
+      <button class="modal-window_close" data-type="modal-button-close"></button>
+      <p class="modal-window_title" data-type="modal-title">TEXT</p>
+      <form class="modal-window-form" data-type="modal-form">
+        <input class="modal-window-form_input" type="email" name="email" required>
+        <input class="modal-window-form_input" type="password" name="password" required>
+        <button class="modal-window-form_button" type="submit" name="button" id="modal-form-button"
+          data-type="">Submit</button>
+      </form>
+    </div>
+    <marquee class="currency visually-hidden" loop="-1" data-type="marquee"></marquee>
+    <div class="container">
+      <section class="page-contetnt">
+        <div class="splash-screen" data-type="splash-screen">
+          <h2 class="splash-screen_title">Lorem ipsum dolor sit amet,
+            consectetur adipisicing</h2>
+          <div class="splash-screen-nav" data-type="screen-nav">
+            <button class="splash-screen-nav_button button-login" type="button" data-type="button-login">Log In</button>
+            <button class="splash-screen-nav_button button-signin" type="button"
+              data-type="button-signin">Signin</button>
+          </div>
+        </div>
+
+        <div class="main-screen visually-hidden" data-type="main-screen">
+          <div class="main-screen-nav">
+            <button class="main-screen-nav_button button-logout-ico" type="button" data-type="button-logout"></button>
+            <a href="https://github.com/StanislavYurchenko/test_work" class="main-screen-nav_button button-github-ico"
+              target="_blank"><span class="visually-hidden">GitHub
+                link</span></a>
+          </div>
+
+          <div class="exchange-rate-and-calculator-wrapper">
+            <div class="exchange-rate-national-bank"></div>
+            <div class="calc">
+              <h2 class="title-calc">Конвертер валют</h2>
+              <div class="calc-wrapper">
+                <input class="calc-input" type="number" id="number" value="" placeholder='Введите суму...'>
+                <select id="first-select">
+                  <option selected disabled>валюта</option>
+                  <option value="USD">USD </option>
+                  <option value="EUR">EUR </option>
+                  <option value="RUR">RUR </option>
+                  <option value="GRN">UAH </option>
+                </select>
+                <span class="title-select">конвертировать в </span>
+                <select id="second-select">
+                  <option selected disabled>валюта</option>
+                  <option value="USD">USD </option>
+                  <option value="EUR">EUR </option>
+                  <option value="RUR">RUR </option>
+                  <option value="GRN">UAH </option>
+                </select>
+                <span class="title-select">результат: </span>
+                <span class="result"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="charts">
+            <h2 class="title-chart">Динамика валюты за 8 дней</h2>
+            <canvas id="myChart" class="js-chart" width="800" height="400"></canvas>
+            <canvas id="myChart2" class="js-chart" width="800" height="400"></canvas>
+            <canvas id="myChart3" class="js-chart" width="800" height="400"></canvas>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <p class="footer-copirate">&copy; 2020 magnificent-eight</p>
+    </div>
+  </footer>
 </body>
+
 
 </html>

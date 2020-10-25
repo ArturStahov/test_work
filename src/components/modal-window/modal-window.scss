@@ -1,0 +1,94 @@
+$modal-time-open-close: 1s;
+$modal-title-color: #ea6060;
+$bg-button-submit: #ea6060;
+$modal-button-submit-font-color: #d6d6d6;
+$modal-form-text-input-color: #1a1919;
+
+.modal-window {
+  padding-top: 200px;
+  transform: translateX(-100%);
+  background-color: $modal-windows-bg;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
+  @media screen and (min-width: $tablet-bp-min) {
+    width: 350px;
+  }
+
+  &_title {
+    @include font-settings(1rem, 1.2, 700, $modal-title-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &_close {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(../images/ico/close_icon.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.modal-window-form {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 250px;
+  margin: 0 auto;
+  &_input {
+    @include font-settings(1rem, 1.2, 400, $modal-form-text-input-color);
+    padding-left: 7px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  &_button {
+    @include font-settings(1rem, 1.2, 500, $modal-button-submit-font-color);
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-button-submit;
+    outline: none;
+    cursor: pointer;
+  }
+}
+.modal-open {
+  animation: mob-nav-modal-animation-open $modal-time-open-close ease-in-out;
+  transform: translateX(0);
+}
+.modal-close {
+  animation: mob-nav-modal-animation-close $modal-time-open-close ease-in-out;
+  transform: translateX(-100%);
+}
+
+@keyframes mob-nav-modal-animation-close {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes mob-nav-modal-animation-open {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

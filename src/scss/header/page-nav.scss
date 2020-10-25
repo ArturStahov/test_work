@@ -1,0 +1,7 @@
+.page-nav {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: $tablet-bp-min) {
+    justify-content: flex-end;
+  }
+}
