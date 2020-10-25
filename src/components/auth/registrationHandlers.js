@@ -5,6 +5,7 @@ import { success, error } from '../pnonify/pnotify';
 const splashRef = document.querySelector('[data-type="splash-screen"]');
 const mainScreenRef = document.querySelector('[data-type="main-screen"]');
 const pageMainRef = document.querySelector('[data-type="page-main"]');
+const marqueeRef = document.querySelector('[data-type="marquee"]');
 
 const modalOptions = {
   selectorModal: '[data-type="modal-window"]',
@@ -39,6 +40,7 @@ export function authHandler(event) {
           mainScreenRef.classList.remove('visually-hidden');
           pageMainRef.classList.add('main-screen-bg');
           pageMainRef.classList.remove('splash-screen-bg');
+          marqueeRef.classList.remove('visually-hidden');
         }
         if (!authorized) {
           error({
@@ -70,6 +72,7 @@ export function authHandler(event) {
           mainScreenRef.classList.remove('visually-hidden');
           pageMainRef.classList.add('main-screen-bg');
           pageMainRef.classList.remove('splash-screen-bg');
+          marqueeRef.classList.remove('visually-hidden');
         }
         if (!registered) {
           error({
@@ -98,4 +101,5 @@ export function logoutHandler() {
   mainScreenRef.classList.add('visually-hidden');
   pageMainRef.classList.remove('main-screen-bg');
   pageMainRef.classList.add('splash-screen-bg');
+  marqueeRef.classList.add('visually-hidden');
 }
