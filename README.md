@@ -1,7 +1,7 @@
 # Finance Fast Micro service.
 
 ## This is an educational project carried out by a group of GoIT students.
-The team was tasked with coming up with a project theme, designing a solution, organizing the work and implementing the task within two days.
+The team set the task to come up with a project theme, design a solution, organize the work and complete the task within two days.
 
 ### The application has functionality:
 - User authorization and new user registration
