@@ -1,7 +1,7 @@
 import './scss/main.scss';
 
 import { authHandler, logoutHandler, loginActions } from './components/auth/registrationHandlers';
-import { chart1, chart2, chart3 } from './components/chart/chart.js';
+import { chartUSD, chartEUR, chartRUB } from './components/chart/chart.js';
 import showExchangeRates from './components/exchangeRate/exchangeRate';
 import markupCurrency from './components/currency/currency';
 const formLoginRef = document.querySelector('[data-type="modal-form"]');
@@ -32,6 +32,6 @@ markupCurrency();
 showExchangeRates();
 
 // charts
-chart1();
-chart2();
-chart3();
+chartUSD();
+chartEUR();
+chartRUB();
