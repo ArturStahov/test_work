@@ -27,20 +27,14 @@ export function authHandler(event) {
   button.dataset.type === 'login-btn' &&
     authWithEmailAndPassword(email.value, password.value)
       .then(({ message, authorized, email }) => {
-        activeUser = { message, authorized, email }
+        activeUser = { authorized, email }
         if (authorized) {
-          activeUser = { message, authorized, email }
           success({
             title: 'You logged in successfully! ',
             text: message,
           });
-          // СЮДА ВСТАВИТЬ ПОСЛЕ УСПЕШНОГО ВХОДА
-          splashRef.classList.add('visually-hidden');
-          modalWindow.closeModal();
-          mainScreenRef.classList.remove('visually-hidden');
-          pageMainRef.classList.add('main-screen-bg');
-          pageMainRef.classList.remove('splash-screen-bg');
-          marqueeRef.classList.remove('visually-hidden');
+          localStorage.setItem('isLogin', `${activeUser.authorized}`);
+          loginActions();
         }
         if (!authorized) {
           error({
@@ -60,19 +54,14 @@ export function authHandler(event) {
   button.dataset.type === 'registration-btn' &&
     registrationWithEmailAndPassword(email.value, password.value)
       .then(({ message, registered, email }) => {
+        activeUser = { authorized: registered, email }
         if (registered) {
-          activeUser = { message, authorized: registered, email }
           success({
             title: 'You signed in successfully! ',
             text: message,
           });
-          // СЮДА ВСТАВИТЬ ПОСЛЕ УСПЕШНОЙ РЕГИСТРАЦИИ
-          splashRef.classList.add('visually-hidden');
-          modalWindow.closeModal();
-          mainScreenRef.classList.remove('visually-hidden');
-          pageMainRef.classList.add('main-screen-bg');
-          pageMainRef.classList.remove('splash-screen-bg');
-          marqueeRef.classList.remove('visually-hidden');
+          localStorage.setItem('isLogin', `${activeUser.authorized}`);
+          loginActions();
         }
         if (!registered) {
           error({
@@ -96,6 +85,22 @@ export function logoutHandler() {
     authorized: false,
     email: null,
   };
+  localStorage.setItem('isLogin', `${activeUser.authorized}`);
+  logoutActions();
+}
+
+export function loginActions() {
+  // СЮДА ВСТАВИТЬ ПОСЛЕ УСПЕШНОЙ РЕГИСТРАЦИИ
+  splashRef.classList.add('visually-hidden');
+  modalWindow.closeModal();
+  mainScreenRef.classList.remove('visually-hidden');
+  pageMainRef.classList.add('main-screen-bg');
+  pageMainRef.classList.remove('splash-screen-bg');
+  marqueeRef.classList.remove('visually-hidden');
+
+}
+
+function logoutActions() {
   // СЮДА ВСТАВИТЬ ПОСЛЕ ВЫХОДА
   splashRef.classList.remove('visually-hidden');
   mainScreenRef.classList.add('visually-hidden');
