@@ -1,6 +1,6 @@
 import './scss/main.scss';
 
-import { authHandler, logoutHandler } from './components/auth/registrationHandlers';
+import { authHandler, logoutHandler, loginActions, } from './components/auth/registrationHandlers';
 import { chart1, chart2, chart3 } from './components/chart/chart.js';
 import showExchangeRates from './components/exchangeRate/exchangeRate';
 import markupCurrency from './components/currency/currency';
@@ -16,13 +16,13 @@ import calculatorCurrency from './components/calculator/calculator.js'
 
 
 // login, registration, logout
+localStorage.getItem('isLogin') === "true" && loginActions();
+
+
+
+
+
 formLoginRef.addEventListener('submit', authHandler);
-
-
-
-
-
-
 
 calculatorCurrency();
 btnLogoutRef.addEventListener('click', logoutHandler);
