@@ -24,6 +24,10 @@ export function authHandler(event) {
   const { email, password, button } = event.currentTarget.elements;
   const form = event.currentTarget;
 
+  if (localStorage.getItem('isLogin') === "true") {
+    loginActions();
+    return
+  }
 
   button.dataset.type === 'login-btn' &&
     authWithEmailAndPassword(email.value, password.value)
