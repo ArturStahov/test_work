@@ -7,11 +7,11 @@ $calc-result-font-color: rgb(211, 218, 214);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 300px;
+  max-width: 290px;
   background-color: $calc-windows-bg;
   border: none;
   border-radius: 0.5rem;
+  margin: 0 auto;
 }
 .calc-wrapper {
   display: flex;
