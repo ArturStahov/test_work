@@ -30,7 +30,7 @@ let yes4 = yesterday4.yyyymmdd();
 let yes5 = yesterday5.yyyymmdd();
 let yes6 = yesterday6.yyyymmdd();
 
-export const chart1 = async () => {
+export const chartUSD = async () => {
   let fullDataUsd = [];
   const data1 = await fetchExchangeRates.requestForTheSelectedDate(yes6);
   // const data1 = await fetch1.json();
@@ -126,7 +126,7 @@ function renderChartUsd(arrUsd) {
   });
 }
 
-export const chart2 = async () => {
+export const chartEUR = async () => {
   let fullDataEur = [];
   const data1 = await fetchExchangeRates.requestForTheSelectedDate(yes6);
   // const data1 = await fetch1.json();
@@ -221,7 +221,7 @@ function renderChartEur(arrEur) {
   });
 }
 
-export const chart3 = async () => {
+export const chartRUB = async () => {
   let fullDataRub = [];
   const data1 = await fetchExchangeRates.requestForTheSelectedDate(yes6);
   // const data1 = await fetch1.json();
