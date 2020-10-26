@@ -1,0 +1,80 @@
+$title-excengerate-font-color: #fff;
+
+.exchange-rate-and-calculator-wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 20px;
+  }
+
+
+  @media screen and (min-width: $desktop-bp-min) {
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.exchange-rate-national-bank {
+  width: 290px;
+  margin: 0 auto;
+
+  @media screen and (max-width: $mobile-bp-max) {
+    margin-bottom: 10px;
+  }
+}
+
+.exchange-rate-national-bank__list {
+  background-color: rgba(121, 117, 117, 0.8);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.exchange-rate-national-bank__title {
+  @include font-settings(1rem, 1.2, 700, $title-excengerate-font-color);
+  @media screen and (min-width: $tablet-bp-min) {
+    @include font-settings(1.5rem, 1.2, 700, $title-excengerate-font-color);
+  }
+  text-shadow: 1px 1px 2px #000, 0 0 1em #fff;
+  text-align: center;
+  background-color: rgba(23, 70, 163, 0.8);
+  display: block;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet-bp-min) {
+    margin-bottom: 39px;
+  }
+}
+
+.exchange-rate-national-bank__item {
+  font-family: Open\Sans;
+  font-size: 26px;
+  color: rgb(34, 33, 33);
+  padding-left: 60px;
+  padding-bottom: 4px;
+
+  &:last-child {
+    padding-bottom: 10px;
+  }
+
+  @media screen and (min-width: $tablet-bp-min) {
+    padding-left: 66px;
+    padding-bottom: 20px;
+
+    &:last-child {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.exchange-rate-national-bank__item-cost {
+  padding-left: 16px;
+}

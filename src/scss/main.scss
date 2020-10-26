@@ -3,3 +3,23 @@
 @import './helpers/mixins';
 @import 'fonts';
 @import 'base';
+
+//header
+@import './header/page-header';
+@import './header/logo';
+@import './header/page-nav';
+
+//main
+@import './main/page-main';
+@import './main/splash-screen';
+@import './main/main-screen';
+@import './main/main-screen-nav';
+//footer
+@import './footer/page-footer';
+
+//component
+@import '../components/modal-window/modal-window';
+@import '../components/chart/chart';
+@import '../components/exchangeRate/exchangeRate';
+@import '../components/calculator/calculator';
+@import '../components/currency/currency';

@@ -1,0 +1,6 @@
+.main-screen {
+  padding: 10px 0px 60px 0px;
+  @media screen and (min-width: $tablet-bp-min) {
+    padding: 20px 0px 70px 0px;
+  }
+}
